@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Maison Étoile - Experiencia de Lujo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        <!-- NAVBAR -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-1">
+            <div class="container px-4">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/LOGO.svg" alt="Hotel Maisson Logo" height="50px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav me-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="vistas/habitaciones.html">HABITACIONES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicios">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#promociones">PROMOCIONES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vistas/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                    <a href="admin/login.html" class="animated-button mt-2 mb-2">
+                        <span>ADMIN</span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div id="heroCarousel" class="carousel slide vh-100" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active bg-cover position-relative"
+                    style="background-image: url('img/slider1.jpg');">
+                    <div
+                        class="d-flex flex-column justify-content-center align-items-center text-white h-100 w-100 bg-dark bg-opacity-50">
+                        <h1 class="display-3">Maison</h1>
+                        <p class="lead">Tu zona de estadía favorita</p>
+                        <a href="vistas/habitaciones.html" class="animated-button">
+                            <span>DISPONIBLES</span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5 bg-light color-blue">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-5 fw-bold mb-3">¿Por qué elegir Maison Étoile?</h2>
+                    <p class="lead text-muted">Descubre lo que nos hace únicos</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-bed fa-3x"></i>
+                        </div>
+                        <h4>Habitaciones de Lujo</h4>
+                        <p class="text-muted">Habitaciones elegantemente diseñadas con todas las comodidades modernas para garantizar tu confort.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-concierge-bell fa-3x"></i>
+                        </div>
+                        <h4>Servicio Personalizado</h4>
+                        <p class="text-muted">Atención 24/7 con un equipo dedicado a hacer de tu estadía una experiencia inolvidable.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card text-center p-4">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-map-marker-alt fa-3x"></i>
+                        </div>
+                        <h4>Descuentos especiales </h4>
+                        <p class="text-muted">Aprovecha nuestras ofertas especiales y vive una experiencia única con precios reducidos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Rooms Preview -->
+    <section class="py-5 bg-blue">
+        <div class="container-fluid">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-3 fw-bold text-white">Nuestras Habitaciones</h2>
+                    <p class="lead text-white">Cada habitación está diseñada para ofrecerte el máximo confort</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Habitación Simple -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="room-card bg-gold text-white">
+                        <img src="img/Habitaciones/Habitacion 1/1.jpg" alt="Habitación Simple" class="room-image img-fluid">
+                        <div class="room-content p-4">
+                            <p class="display-2">Simple</p>
+                            <p class="lead">Perfecta para viajeros solitarios</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price color-blue">desde S/50</span>
+                                <a href="habitacion-detalle.html?tipo=simple" class="btn btn-outline-light">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habitación Matrimonial -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="room-card bg-gold text-white">
+                        <img src="img/Habitaciones/Habitacion 2/1.jpg" alt="Habitación Matrimonial" class="room-image img-fluid">
+                        <div class="room-content p-4">
+                            <h4 class="display-2">Matrimonial</h4>
+                            <p class="lead">Ideal para parejas</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price color-blue">desde S/55</span>
+                                <a href="habitacion-detalle.html?tipo=matrimonial" class="btn btn-outline-light">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Suite -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="room-card bg-gold text-white">
+                        <img src="img/Habitaciones/Habitacion 7/1.jpg" alt="Suite" class="room-image img-fluid">
+                        <div class="room-content p-4">
+                            <h4 class="display-2">Suite</h4>
+                            <p class="lead">Para ocasiones especiales</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price color-blue">desde S/70</span>
+                                <a href="habitacion-detalle.html?tipo=suite" class="btn btn-outline-light">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habitación VIP -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="room-card bg-gold text-white">
+                        <img src="img/Habitaciones/Habitacion 24/1.jpg" alt="Habitación VIP" class="room-image img-fluid">
+                        <div class="room-content p-4">
+                            <h4 class="display-2">VIP</h4>
+                            <p class="lead">Exclusividad y servicios premium</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price color-blue">desde S/80</span>
+                                <a href="habitacion-detalle.html?tipo=vip" class="btn btn-outline-light">Ver Detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="habitaciones.html" class="btn btn-gold btn-lg">Ver Todas las Habitaciones</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video -->
+    <section class="container my-5">
+        <div class="row align-items-center">
+            <!-- Primera columna: Texto -->
+            <div class="col-md-6">
+                <p class="display-2 color-gold">¡Vive la experiencia Maison!</p>
+                <p class="lead color-blue">
+                    Un nuevo concepto único e innovador. Maison es un hotel diseñado para escapar de lo convencional 
+                    y rutinario, escenario ideal para parejas que valoran los detalles y disfrutan el momento sin mirar atrás.
+                </p>
+            </div>
+            <!-- Segunda columna: Video de YouTube -->
+            <div class="col-md-6">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/UJEUwEJ6gH4" title="Video de experiencia Maison"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Servicios -->
+<section id= "servicios" class="container-fluid p-5 mt-5 mb-5 text-center bg-blue py-5">
+    <h2 class="display-3 fw-bold text-white">Servicios</h2>
+    <p class="lead text-white">Todo lo que necesitas en un solo lugar</p>
+    <div class="row justify-content-center mt-4">
+        <!-- RINCÓN GOURMET -->
+        <div class="col-md-4 mb-3">
+            <div class="card shadow room-card bg-white">
+                <div class="card-body text-center">
+                    <h3 class="card-title display-2 color-blue">RINCÓN GOURMET</h3>
+                    <p class="card-text lead color-blue">Una selección exclusiva de productos premium para los amantes de la buena comida. Ingredientes de alta calidad y opciones para sorprender tu paladar.</p>
+                    <a href="https://drive.google.com/file/d/1jSMTwNd0CxU73I8005ij0GmlLoSUHtn9/view" target="_blank" class="btn btn-blue">Ver catálogo</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ZONA SNACKS -->
+        <div class="col-md-4 mb-3">
+            <div class="card shadow room-card bg-white">
+                <div class="card-body text-center">
+                    <h3 class="card-title display-2 color-blue">ZONA SNACKS</h3>
+                    <p class="card-text lead color-blue">La mejor variedad de snacks para cualquier ocasión. Desde crujientes aperitivos hasta tus bebidas heladas favoritas, para disfrutar solo o compartir.</p>
+                    <a href="https://drive.google.com/file/d/1jSMTwNd0CxU73I8005ij0GmlLoSUHtn9/view" target="_blank" class="btn btn-blue">Ver catálogo</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- LOVE STORE -->
+        <div class="col-md-4 mb-3">
+            <div class="card shadow room-card bg-white">
+                <div class="card-body text-center">
+                    <h3 class="card-title display-2 color-blue">LOVE STORE</h3>
+                    <p class="card-text lead color-blue">Explora una exclusiva colección de artículos diseñados para el placer y la conexión íntima. Encuentra opciones sofisticadas y discretas para cada ocasión.</p>
+                    <a href="https://drive.google.com/file/d/1jSMTwNd0CxU73I8005ij0GmlLoSUHtn9/view" target="_blank" class="btn btn-blue">Ver catálogo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- PROMOCIONES -->
+<section id="promociones" class="container-fluid py-5">
+    <h1 class="display-3 color-gold text-center mb-5">PROMOCIONES</h1>
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Feliz Cumpleaños -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow room-card promo-card" style="background-image: url('img/Habitaciones/Habitacion 13/2.jpg');">
+                    <div class="card-overlay">
+                        <div class="card-body text-center text-white">
+                            <h3 class="card-title display-2">¡Feliz Cumpleaños!</h3>
+                            <p class="card-text lead">Celebra con nosotros y obtén un <strong>10% de descuento</strong> en tu estadía si reservas en tu cumpleaños.</p>
+                            <p class="badge bg-warning">Válido presentando DNI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Escapada Romántica -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow room-card promo-card" style="background-image: url('img/Habitaciones/Habitacion 15/2.jpg');">
+                    <div class="card-overlay">
+                        <div class="card-body text-center text-white">
+                            <h3 class="card-title display-2">Escapada Romántica</h3>
+                            <p class="card-text lead">Ideal para parejas: incluye <strong>decoración especial</strong> + bebida de cortesía por solo <strong>50 soles</strong>.</p>
+                            <p class="badge bg-success">Válido de lunes a jueves</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hora Extra Gratis -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow room-card promo-card" style="background-image: url('img/Habitaciones/Habitacion 18/2.jpg');">
+                    <div class="card-overlay">
+                        <div class="card-body text-center text-white">
+                            <h3 class="card-title display-2">Hora Extra Gratis</h3>
+                            <p class="card-text lead">Reserva <strong>10 horas</strong> y recibe <strong>1 hora adicional sin costo</strong>. Quédate un poco más y disfruta.</p>
+                            <p class="badge bg-danger">Válido de lunes a jueves</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<div class="container-fluid bg-blue text-white">
+    <footer class="py-3 px-3">
+        <div class="row justify-content-center align-items-start gx-4">
+
+            <!-- Logo -->
+            <div class="col-12 col-sm-6 col-md-2 mb-4 d-flex justify-content-center">
+                <img src="img/LOGO.svg" alt="Mascota feliz" class="img-fluid rounded" style="max-height: 150px;">
+            </div>
+
+            <!-- Dirección y contacto -->
+            <div class="col-12 col-sm-6 col-md-2 mb-4">
+                <ul class="nav d-flex flex-column text-sm-start text-center">
+                    <li class="nav-item mb-2 px-2">
+                        <a href="#" class="nav-link p-0 text-white">
+                            Calle Sinchi Roca 533,<br>El Porvenir, Trujillo,<br>La Libertad.
+                        </a>
+                    </li>
+                    <li class="nav-item mb-2 px-2">
+                        <a href="#" class="nav-link p-0 text-white">987 529 264</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <div class="d-flex justify-content-center justify-content-sm-start gap-2">
+                            <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="text-white fs-5"><i class="bi bi-tiktok"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Ayuda -->
+            <div class="col-12 col-sm-6 col-md-2 mb-4">
+                <ul class="nav d-flex flex-row flex-sm-column justify-content-center text-center text-md-start">
+                    <li class="nav-item px-2 mb-2"><a href="vistas/contacto.html" class="nav-link p-0 text-white">Contacto</a></li>
+                    <li class="nav-item px-2 mb-2"><a href="vistas/faqs.html" class="nav-link p-0 text-white">FAQs</a></li>
+                    <li class="nav-item px-2"><a href="vistas/politicas.html" class="nav-link p-0 text-white">Políticas</a></li>
+                </ul>
+            </div>
+
+            <!-- Suscríbete -->
+            <div class="col-12 col-sm-6 col-md-4 mb-4 d-flex flex-column align-items-center align-items-sm-start px-2">
+                <label for="correoSuscripcion" class="form-label text-white mb-2 text-center text-sm-start">Suscríbete
+                    para recibir novedades</label>
+                <div class="input-wrapper ">
+                    <input placeholder="Ingresa tu correo" class="input" name="text" type="email" id="correoSuscripcion"
+                        required />
+                    <button class="Subscribe-btn">Suscribirse</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

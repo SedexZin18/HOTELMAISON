@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habitación Premium - MH</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .flex-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .room-img {
+      flex: 1 1 55%;
+      max-width: 55%;
+    }
+    .room-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .extra-images {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+    .extra-images img {
+      width: calc(25% - 10px);
+      height: auto;
+      border-radius: 6px;
+    }
+    .description {
+      flex: 1 1 40%;
+      background-color: #244f66;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .description h2 {
+      margin-top: 0;
+    }
+    .description ul {
+      list-style: none;
+      padding: 0;
+    }
+    .description ul li::before {
+      content: "\2713 ";
+      color: #00ffcc;
+    }
+    .status {
+      background-color: #a63c3c;
+      padding: 10px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      margin-top: 10px;
+      border-radius: 4px;
+    }
+    .tarifario {
+      margin-top: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #81001f;
+      color: white;
+    }
+    td:first-child {
+      font-weight: bold;
+      background-color: #f2f2f2;
+    }
+    .logo {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 2em;
+      color: #bfa158;
+    }
+    .logo span {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    @media (max-width: 768px) {
+      .room-img, .description {
+        max-width: 100%;
+        flex: 1 1 100%;
+      }
+      .extra-images img {
+        width: 48%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="flex-section">
+      <div class="room-img">
+        <img src="1.jpg" alt="Habitación Premium">
+        <div class="extra-images">
+          <img src="1.jpg"Extra 1">
+          <img src="2.jpg" alt="Extra 2">
+          <img src="3.jpg" alt="Extra 3">
+          <img src="4.jpg" alt="Extra 4">
+        </div>
+      </div>
+      <div class="description">
+        <h2>DESCRIPCIÓN</h2>
+        <ul>
+          <li>Jacuzzi con Hidromasajes</li>
+          <li>Mueble Kamasutra</li>
+          <li>Aire Acondicionado</li>
+          <li>TV 4K Ultra HD 60" (Giratorio)</li>
+          <li>Netflix y Youtube Premium</li>
+          <li>Ducha (Agua fría y caliente)</li>
+          <li>Cable y Canal Privado</li>
+          <li>Frigobar (Costo Extra)</li>
+          <li>Cama King Size</li>
+        </ul>
+        <div class="status">OCUPADO</div>
+      </div>
+    </div>
+
+    <div class="tarifario">
+      <h2>NUESTRO TARIFARIO (S/.)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>HORAS</th>
+            <th>L</th>
+            <th>M</th>
+            <th>X</th>
+            <th>J</th>
+            <th>V</th>
+            <th>S</th>
+            <th>D</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5 HORAS</td>
+            <td>70</td><td>70</td><td>70</td><td>70</td><td>70</td><td>70</td><td>70</td>
+          </tr>
+          <tr>
+            <td>10 HORAS</td>
+            <td>112</td><td>112</td><td>112</td><td>112</td><td>112</td><td>112</td><td>112</td>
+          </tr>
+          <tr>
+            <td>24 HORAS</td>
+            <td>210</td><td>210</td><td>210</td><td>210</td><td>210</td><td>210</td><td>210</td>
+          </tr>
+          <tr>
+            <td>HORA EXTRA</td>
+            <td>14</td><td>14</td><td>14</td><td>14</td><td>14</td><td>14</td><td>14</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="logo">
+      <div>★★★</div>
+      <div><span>MH</span></div>
+    </div>
+  </div>
+</body>
+</html>
